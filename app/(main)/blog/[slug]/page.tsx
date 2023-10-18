@@ -18,33 +18,11 @@ export const generateMetadata = async ({
     notFound()
   }
 
-  const { title, description, mainImage } = post
+  const { title, description } = post
 
   return {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      images: [
-        {
-          url: mainImage.asset.url,
-        },
-      ],
-      type: 'article',
-    },
-    twitter: {
-      images: [
-        {
-          url: mainImage.asset.url,
-        },
-      ],
-      title,
-      description,
-      card: 'summary_large_image',
-      site: '@thecalicastle',
-      creator: '@thecalicastle',
-    },
   } satisfies Metadata
 }
 

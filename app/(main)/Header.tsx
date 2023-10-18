@@ -144,11 +144,9 @@ export function Header() {
   const avatarTransform = useMotionTemplate`translate3d(${avatarX}rem, 0, 0) scale(${avatarScale})`
   const avatarBorderTransform = useMotionTemplate`translate3d(${avatarBorderX}rem, 0, 0) scale(${avatarBorderScale})`
 
-  const [isShowingAltAvatar, setIsShowingAltAvatar] = React.useState(false)
   const onAvatarContextMenu = React.useCallback(
     (event: React.MouseEvent<HTMLDivElement>) => {
       event.preventDefault()
-      setIsShowingAltAvatar((prev) => !prev)
     },
     []
   )
@@ -216,7 +214,6 @@ export function Header() {
                     >
                       <Avatar.Image
                         large
-                        alt={isShowingAltAvatar}
                         className="block h-full w-full"
                       />
                     </motion.div>
@@ -260,7 +257,7 @@ export function Header() {
                       onContextMenu={onAvatarContextMenu}
                     >
                       <Avatar>
-                        <Avatar.Image alt={isShowingAltAvatar} />
+                        <Avatar.Image />
                       </Avatar>
                     </motion.div>
                   )}
@@ -280,22 +277,6 @@ export function Header() {
                   <ThemeSwitcher />
                 </div>
               </motion.div>
-              {/* 
-              <AnimatePresence>
-                {!isHomePage && (
-                  <motion.div
-                    className="absolute left-14 top-1 flex h-8 items-center"
-                    initial={{ opacity: 0, scale: 0.3 }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                      transition: { delay: 1 },
-                    }}
-                  >
-                    <Activity />
-                  </motion.div>
-                )}
-              </AnimatePresence> */}
             </div>
           </Container>
         </div>

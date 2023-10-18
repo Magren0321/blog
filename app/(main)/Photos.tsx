@@ -4,21 +4,21 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
-import image5 from '~/assets/highlights/highlight-cali.jpeg'
-import image1 from '~/assets/highlights/highlight-cat.jpeg'
-import image3 from '~/assets/highlights/highlight-controller.jpg'
-import image6 from '~/assets/highlights/highlight-push.png'
-import image2 from '~/assets/highlights/highlight-workshop.jpg'
-import image4 from '~/assets/highlights/highlight-zolplay.jpg'
+import image5 from '~/assets/highlights/highlight-cat.jpeg'
+import image6 from '~/assets/highlights/highlight-desktop.jpeg'
+import image1 from '~/assets/highlights/highlight-girlfriend.jpeg'
+import image4 from '~/assets/highlights/highlight-gundam.jpeg'
+import image2 from '~/assets/highlights/highlight-tree.jpeg'
+import image3 from '~/assets/highlights/highlight-work.jpeg'
 
-const images = [image1, image2, image3, image4, image5, image6]
+const images = [image2,image3,image1,image5,image4, image6]
 const alts = [
-  '我的猫躺在我的工作台桌子上的键盘旁边',
-  '我在西雅图城市大学举办的技术演讲',
-  'Xbox 团队给我专属定制的控制器',
-  '佐玩的办公室大厅，背景墙挂着一个黑色的佐玩氛围布',
-  '我举着酒杯看着手机',
-  '我在用 Ableton Push 制作电子乐',
+  '随手拍',
+  '工位',
+  '神仙女朋友',
+  '我的猫',
+  '我就是高达！',
+  '任天堂是世界主宰',
 ]
 
 export function Photos() {
@@ -62,8 +62,7 @@ export function Photos() {
             className="relative h-40 flex-none shrink-0 snap-start overflow-hidden rounded-xl bg-zinc-100 ring-2 ring-lime-800/20 dark:bg-zinc-800 dark:ring-lime-300/10 md:h-72 md:rounded-3xl"
             animate={{
               width,
-              opacity: isCompact ? 1 : 0.85,
-              filter: isCompact ? 'grayscale(0)' : 'grayscale(0.5)',
+              opacity: isCompact ? 1 : 0.9,
               rotate: idx % 2 === 0 ? 2 : -1,
             }}
             whileHover={

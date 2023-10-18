@@ -23,31 +23,9 @@ async function getNewsletter(id: string) {
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const newsletter = await getNewsletter(params.id)
 
-  const imageUrlRegex = /!\[[^\]]*\]\((.*?)\)/
-  const match = newsletter.body?.match(imageUrlRegex)
-  let imageUrl: string | undefined = undefined
-
-  if (match) {
-    imageUrl = match[1]
-  }
-
   return {
     title: newsletter.subject,
     description: newsletter.subject,
-    openGraph: {
-      images: imageUrl ? [{ url: imageUrl }] : undefined,
-      title: newsletter.subject ?? '',
-      description: newsletter.subject ?? '',
-      type: 'article',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: newsletter.subject ?? '',
-      description: newsletter.subject ?? '',
-      images: imageUrl ? [{ url: imageUrl }] : undefined,
-      site: '@thecalicastle',
-      creator: '@thecalicastle',
-    },
   } satisfies Metadata
 }
 
