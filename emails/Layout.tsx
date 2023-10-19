@@ -39,43 +39,36 @@ export default function Layout({
                 src={`${emailConfig.baseUrl}/icon.png`}
                 width="24"
                 height="24"
-                alt="Cali"
+                alt="Magren"
                 className="mx-auto my-0"
               />
               <Text className="text-center">
                 <Link
-                  href="https://cali.so"
+                  href="https://magren.cc"
                   className="text-zinc-700 underline"
                 >
-                  <strong>Cali Castle</strong>
+                  <strong>Magren</strong>
                 </Link>
                 <br />
-                开发者、设计师、细节控、创始人
+                开发者、瞎折腾、细节控、游戏玩家
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://cali.so/twitter"
+                  href="/twitter"
                   className="text-xs text-zinc-600 underline"
                 >
                   Twitter
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/youtube"
-                  className="text-xs text-zinc-600 underline"
-                >
-                  YouTube
-                </Link>{' '}
-                |&nbsp;
-                <Link
-                  href="https://cali.so/github"
+                  href="/github"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/bilibili"
+                  href="/bilibili"
                   className="text-xs text-zinc-600 underline"
                 >
                   哔哩哔哩
