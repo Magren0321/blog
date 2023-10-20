@@ -24,7 +24,7 @@ export default function BlogPage() {
         </p>
       </header>
       <div className="mt-12 grid grid-cols-1 gap-6 sm:mt-20 lg:grid-cols-2 lg:gap-8">
-        <BlogPosts limit={20} />
+        <BlogPosts limit={9999} />
       </div>
     </Container>
   )

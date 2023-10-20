@@ -3,7 +3,7 @@
 import { PortableText, type PortableTextComponents } from '@portabletext/react'
 import React from 'react'
 
-import { PeekabooLink } from '~/components/links/PeekabooLink'
+import { RichLink } from '~/components/links/RichLink'
 import {
   PortableTextBlocksBlockquote,
   PortableTextBlocksH1,
@@ -39,9 +39,9 @@ const components: PortableTextComponents = {
         ? 'noreferrer noopener'
         : undefined
       return (
-        <PeekabooLink href={value.href} rel={rel}>
+        <RichLink href={value.href} rel={rel} favicon={false}>
           {children}
-        </PeekabooLink>
+        </RichLink>
       )
     },
   },
