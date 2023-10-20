@@ -16,7 +16,7 @@ export default function AboutPage() {
         👋 About Me
         </h1>
         <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
-          <Balancer>{description}</Balancer>ß
+          <Balancer>{description}</Balancer>
         </p>
       </header>
       <article className="prose dark:prose-invert">
