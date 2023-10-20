@@ -18,10 +18,9 @@ export const generateMetadata = async ({
     notFound()
   }
 
-  const { title, description } = post
+  const { description } = post
 
   return {
-    title,
     description,
   } satisfies Metadata
 }

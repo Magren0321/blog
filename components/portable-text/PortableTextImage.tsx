@@ -53,7 +53,7 @@ export function PortableTextImage({
                 hasLabel ? 'rounded-2xl bg-zinc-100 p-2 dark:bg-zinc-800' : ''
               )}
             >
-              <motion.div className="relative" layoutId={`image_${value._key}`}>
+              <motion.div className="relative flex justify-center" layoutId={`image_${value._key}`}>
                 <Dialog.Trigger>
                   <Image
                     src={value.url}

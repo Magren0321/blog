@@ -14,12 +14,12 @@ const ConfirmSubscriptionEmail = ({ link = 'link.com/confirm?fake-token' }) => {
           src={`${emailConfig.baseUrl}/subscription-email-header.jpg`}
           width="250"
           height="129.28"
-          alt="Cali"
+          alt="Magren"
           className="mx-auto my-0"
         />
       </Section>
       <Heading className="mx-0 my-[30px] p-0 text-center text-[24px] font-bold text-black">
-        订阅 Magrne 的动态
+        订阅 Magren 的动态
       </Heading>
       <Text className="text-[14px] leading-[24px] text-black">Hello!</Text>
       <Text className="text-[14px] leading-[24px] text-black">
