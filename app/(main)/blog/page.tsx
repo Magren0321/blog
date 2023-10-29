@@ -8,8 +8,12 @@ import { BlogPosts } from './BlogPosts'
 const description =
   '人生的阵痛期往往伴随着更强的内容创作欲望'
 
-// TODO: add pagination or infinite scroll
+// TODO: add pagination or infinite scroll and categories
 export default function BlogPage() {
+  // const categories =  [...new Set((await getLatestBlogPosts({ limit: 99999, forDisplay: true }))
+  //   .map(({ categories }) => categories)
+  //   .flat())]
+  
   return (
     <Container className="mt-16 sm:mt-24">
       <header className="max-w-2xl">
